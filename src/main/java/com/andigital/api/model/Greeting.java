@@ -27,7 +27,11 @@ public class Greeting implements Serializable {
     @Column(nullable = false)
     private String to;
 
+    // Needed by Spring Data Interceptors
+    protected Greeting() {}
+
     public Greeting(String what, String to) {
+        super();
         this.what = what;
         this.to = to;
     }

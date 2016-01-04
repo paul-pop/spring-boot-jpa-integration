@@ -14,7 +14,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
  * Created by Paul Pop on 27/10/2015.
  */
 @ControllerAdvice
-final class ExceptionHandlerController extends ResponseEntityExceptionHandler {
+class ExceptionHandlerController extends ResponseEntityExceptionHandler {
 
     @Override
     protected ResponseEntity<Object> handleExceptionInternal(Exception ex, Object body, HttpHeaders headers,
